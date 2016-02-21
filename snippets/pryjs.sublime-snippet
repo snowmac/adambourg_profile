@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+pry = require('pryjs'); eval(pry.it);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>pryjs</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.javascript</scope>
+</snippet>

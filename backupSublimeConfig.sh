@@ -14,7 +14,8 @@ cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sub
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./settings
 
 # Copy Snippets
-cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*.sublime-snippet ./snippets
+find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./snippets \;
 
 # Copy installed packages
 cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./packages
+
