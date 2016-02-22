@@ -8,6 +8,6 @@ if [[ $1 == "--config" ]]; then
   cp ./git/gitconfig ~/
 else
   echo 'copying config'
-  cp ~/git/.gitconfig ./git
+  cp ~/.gitconfig ./git
   git commit -a -m 'Updating the git commit';
 fi
