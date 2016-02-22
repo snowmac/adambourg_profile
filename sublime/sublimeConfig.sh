@@ -12,14 +12,14 @@ if [[ $1 == '--config' ]]; then
   fi
 
   # Copy settings
-  cp ./settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-  cp ./settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
   # Copy Snippets
-  cp -R ./snippets/*.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  cp -R ./sublime/snippets/*.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
   # Copy packages
-  cp -R ./packages/*.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages\
+  cp -R ./sublime/packages/*.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages\
 else # We are backing up
   echo "Backuping up sublime settings"
 
@@ -33,14 +33,14 @@ else # We are backing up
   mkdir "sublime/packages"
 
   # Copy Preferences
-  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ./sublime/settings
-  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./sublime/settings
+  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ./sublime/sublime/settings
+  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./sublime/sublime/settings
 
   # Copy Snippets
-  find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./sublime/snippets \;
+  find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./sublime/sublime/snippets \;
 
   # Copy installed packages
-  cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/packages
+  cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/sublime/packages
 
   git add .
   git commit -m 'Adding the sublime configurations'
