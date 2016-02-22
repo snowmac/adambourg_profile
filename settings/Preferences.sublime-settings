@@ -39,7 +39,6 @@
 	"bold_folder_labels": true,
 	"caret_style": "phase",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Colorsublime-Themes/8-Colour-Dark.tmTheme",
 	"copy_with_empty_selection": true,
 	"create_window_at_startup": true,
 	"default_encoding": "UTF-8",
@@ -104,11 +103,6 @@
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": true,
-	"ignored_packages":
-	[
-		"BeautifyRuby",
-		"Vintage"
-	],
 	"indent_guide_options":
 	[
 		"draw_active"
