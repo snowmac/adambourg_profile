@@ -6,4 +6,7 @@
 ./sublime/sublimeConfig.sh $*
 ./git/git.sh $*
 
-git push origin master
+
+if [[ $1 == "--config" ]]; then
+  git push origin master
+fi
