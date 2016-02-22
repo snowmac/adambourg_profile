@@ -5,7 +5,7 @@ echo 'Entering git cli'
 # Copy is default vs config
 if [[ $1 == "--config" ]]; then
   echo 'installing config'
-  cp ./git/gitconfig ~/
+  cp ./git/.gitconfig ~/
 else
   echo 'copying config'
   cp ~/.gitconfig ./git
