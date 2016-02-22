@@ -1,4 +1,4 @@
-#!/bin/sh
+ q#!/bin/sh
 
 # use this file to run all the things
 
