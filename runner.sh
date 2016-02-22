@@ -5,3 +5,5 @@
 # Fire each one passing in args *
 ./sublime/sublimeConfig.sh $*
 ./git/git.sh $*
+
+git push origin master
