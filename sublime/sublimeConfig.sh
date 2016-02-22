@@ -13,7 +13,7 @@ if [[ $1 == '--config' ]]; then
 
   # Copy settings
   # cp ./sublime/settings/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-  # cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+  cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
   # # Copy Snippets
   # cp -R ./sublime/snippets/*.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
