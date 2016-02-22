@@ -40,7 +40,7 @@ else # We are backing up
   find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./sublime/snippets \;
 
   # Copy installed packages
-  cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/packages
+  # cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/packages
 
   git add .
   git commit -m 'Adding the sublime configurations'
