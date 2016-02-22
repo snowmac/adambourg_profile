@@ -15,10 +15,10 @@ if [[ $1 == '--config' ]]; then
   cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
   cp ./sublime/settings/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
-  # Copy Snippets
+  # # Copy Snippets
   cp -R ./sublime/snippets/*.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
-  # Copy packages
+  # # Copy packages
   cp -R ./sublime/packages/*.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages\
 else # We are backing up
   echo "Backuping up sublime settings"
