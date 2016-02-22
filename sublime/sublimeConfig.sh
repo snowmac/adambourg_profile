@@ -33,14 +33,14 @@ else # We are backing up
   mkdir "sublime/packages"
 
   # Copy Preferences
-  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ./sublime/sublime/settings
-  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./sublime/sublime/settings
+  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ./sublime/settings
+  cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings ./sublime/settings
 
   # Copy Snippets
-  find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./sublime/sublime/snippets \;
+  find ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/ -name "*.sublime-snippet" -type f -exec cp {} ./sublime/snippets \;
 
   # Copy installed packages
-  cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/sublime/packages
+  cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages/*.sublime-package ./sublime/packages
 
   git add .
   git commit -m 'Adding the sublime configurations'
