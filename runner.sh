@@ -7,6 +7,6 @@
 ./git/git.sh $*
 
 
-if [[ $1 == "--config" ]]; then
+if [[ $1 != "--config" ]]; then
   git push origin master
 fi
