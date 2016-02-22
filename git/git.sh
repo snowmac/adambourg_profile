@@ -9,6 +9,6 @@ if [[ $1 == "--config" ]]; then
 else
   echo 'copying config'
   cp ~/.gitconfig .
-  git add .
-  git commit -m 'Updating the git commit';
+  # git add .
+  git commit -a -m 'Updating the git commit';
 fi
